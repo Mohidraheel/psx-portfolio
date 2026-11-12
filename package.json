@@ -1,0 +1,11 @@
+{
+  "name": "psx-portfolio",
+  "private": true,
+  "workspaces": ["server", "client"],
+  "scripts": {
+    "start": "npm run build -w client && npm start -w server",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "test": "npm test -w server"
+  }
+}
